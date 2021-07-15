@@ -1,0 +1,75 @@
+@font-face {
+	font-family:"Minecraft";
+	src:url("../fonts/Minecraft.ttf");
+}
+
+.mczt {
+	font-family:"Minecraft";
+}
+
+.kuang {
+	text-align:center;
+	margin-top:200px;
+}
+
+.zj {
+	text-align:center
+}
+
+.value {
+	width:200px;
+	height:200px;
+	border:1px solid;
+	text-align:center;
+	line-height:200px;
+	display:inline-block;
+}
+
+div {
+	text-align:center;
+}
+
+.url {
+	color:rgb(0,162,255)
+}
+.input {
+	color:hsl(0,0%,100%);
+	/* 指针文字颜色 */
+	background-color:rgb(94,94,94);
+	/* 背景主色 */
+    /* text-:12px;
+	*/
+	padding:9px;
+	margin:5px 5px 5px 0px;
+	width:8%;
+	box-shadow:
+        2px 2px rgb(0,0,0),/* 边框 */
+        2px 0 rgb(0,0,0),
+        0 2px rgb(0,0,0),
+        2px -2px #C6C6C6,
+        -2px 2px #C6C6C6;
+}
+.button {
+	color:#4C4C4C;
+	background-color:#C6C6C6;
+	padding:7px;
+	margin:5px 5px 5px 0px;
+	width:7%;
+	text-align:center;
+	box-shadow:
+        2px 2px rgb(0,0,0),
+        2px 0 #C6C6C6,
+        0 2px #C6C6C6,
+        2px -2px #C6C6C6,
+        -2px 2px #C6C6C6;
+}
+.button:hover {
+	color:white;
+	background-color:#43A01C;
+	box-shadow:
+        2px 2px #037300,
+        2px 0 #037300,
+        0 2px #037300,
+        2px -2px #43A01C,
+        -2px 2px #43A01C;
+}
