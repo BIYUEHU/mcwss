@@ -1,0 +1,23 @@
+{
+  "name": "huliws",
+  "version": "1.0.0",
+  "description": "huliws WebSocket By 碧月狐dada",
+  "author": "碧月狐dada",
+  "main": "main.js",
+  "scripts": {
+    "huliws": "node main.js"
+  },
+  "homepage": "https://github.com/biyuehu/huliws",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biyuehu/huliws.git"
+  },
+  "dependencies": {
+    "ws": "6.1.0"
+  },
+  "keywords": [
+    "minecraft",
+    "websocket",
+    "mcbe"
+  ]
+}

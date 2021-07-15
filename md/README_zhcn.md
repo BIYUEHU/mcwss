@@ -37,4 +37,4 @@ CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752
 
 ## 文档  
 [功能文档](./function_zhcn.md)  
-[API文档](./API_zhcn.md)  
+[API文档](./api_zhcn.md)  

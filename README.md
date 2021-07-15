@@ -13,6 +13,7 @@ For example: development and debugging, behavior record &amp; Detection &amp; lo
 2.Enter "CMD" in the address column of the root directory to call out the CMD  
 3.Enter "node main. JS" or "npm run huiws" enter  
 4.Input in the game this  
+
 ```js  
 /connect 127.0.0.1:1  
 ```
@@ -37,4 +38,4 @@ CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752
 
 ## Doc  
 [Function Doc](./md/function.md)  
-[API Doc](./md/API.md)  
+[API Doc](./md/api.md)  
