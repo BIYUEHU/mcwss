@@ -169,6 +169,6 @@ HTML控制台主页文件
 | ./getlocalplayername              | 返回玩家名字                 |
 
 ### HTML控制台  
-可直接通过浏览器打开**web/index.html**文件，亦或挂在自己的网站上，也可通过我们已搭建  在线网站:[>This](https://biyuehu.github.io/huliws)  
+可直接通过浏览器打开**web/index.html**文件，亦或挂在自己的网站上，也可通过我们已搭建  在线网站:[>This](http://111.67.196.75:81/tool/data/huliws)  
 ![](../web/images/z1.png)  
 ![](../web/images/z2.png)  
