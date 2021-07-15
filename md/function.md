@@ -169,6 +169,6 @@ There are currently eight hidden commands
 | ./getlocalplayername              | Return the layer name                 |
 
 ### HTML console  
-You can directly open the **Web / index. HTML** file through the browser, or hang it on your own website, or through our online website:[>This](https://biyuehu.github.io/huliws)  
+You can directly open the **Web / index. HTML** file through the browser, or hang it on your own website, or through our online website:[>This](http://111.67.196.75:81/tool/data/huliws)  
 ![](../web/images/z1.png)  
 ![](../web/images/z2.png)  
