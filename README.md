@@ -28,7 +28,7 @@ For example: development and debugging, behavior record &amp; Detection &amp; lo
 ~~Using the WS server we have built, there is no need to download it~~  
 Input in the game this  
 ```js  
-/connect huliapi.xyz:1  
+/connect 82.157.165.201:1  
 ```
 **PS:Make sure that the uwp application cycle limit has been removed when connecting locally**  
 Otherwise, it will not be able to connect; Run the CMD as an administrator and enter  
