@@ -8,6 +8,7 @@
     "experimentalDecorators": true,
     "composite": true,
     "incremental": true,
+    "outDir": "lib",
     "baseUrl": "./src",
   },
   "include": [
