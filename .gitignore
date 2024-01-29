@@ -6,15 +6,4 @@ lib
 *.tgz
 tsconfig.tsbuildinfo
 pnpm-lock.yaml
-kotori.dev.yml
-
-scripts/*.js
-
-modules2
-modules3
-# modules/*
-!modules/adapter-*
-!modules/core
-!modules/helper
-!modules/i18n-command
-!modules/menu
+old
