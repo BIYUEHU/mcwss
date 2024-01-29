@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML控制台-HuliWs</title>
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="./styles/web.css"/>
+</head>
+<body style="background: url(./images/bj.png); background-size:100% 100% ; background-attachment: fixed">
+    <div class="zj" >
+        <div class='mczt' style="font-size: 210%;color: #cf3838d3">HTML控制台-HuliWs</div>
+        <div class="mczt" style="font-size: 150%;color: #f0cc01">WS服务器地址</div>
+        <input class='input' id='wsweb' name="wsweb">
+        <div class="mczt" style="font-size: 150%;color: #0b4cff">WSkey</div>
+        <input class='input' id='key' name="key">
+        <div></div>
+        <input type="button" class='button' value="连接" onclick=javascrtpt:lianjie()>        
+        <div class="mczt" style="font-size: 125%;color: #ffffff" id="mess">未连接</div>
+        <div class='mczt' style="font-size: 170%;">---------</div>
+        <div class="mczt" style="font-size: 140%;color: #0bbaff">模式</div>
+        <input type="button" class='button' value="生存" onclick=javascrtpt:g0()>    
+        <input type="button" class='button' value="创造" onclick=javascrtpt:g1()>    
+        <input type="button" class='button' value="冒险" onclick=javascrtpt:g2()>    
+        <div class="mczt" style="font-size: 140%;color: #0bbaff">时间</div>
+        <input type="button" class='button' value="日出" onclick=javascrtpt:t1()>    
+        <input type="button" class='button' value="中午" onclick=javascrtpt:t2()>    
+        <input type="button" class='button' value="日落" onclick=javascrtpt:t3()>    
+        <input type="button" class='button' value="夜晚" onclick=javascrtpt:t4()>    
+        <div class="mczt" style="font-size: 140%;color: #0bbaff">天气</div>
+        <input type="button" class='button' value="晴天" onclick=javascrtpt:w1()>    
+        <input type="button" class='button' value="雨天" onclick=javascrtpt:w2()>    
+        <input type="button" class='button' value="雷暴" onclick=javascrtpt:w3()>    
+        <div class="mczt" style="font-size: 140%;color: #0bbaff">其它</div>
+        <input type="button" class='button' value="自杀" onclick=javascrtpt:zs()>    
+        <input type="button" class='button' value="清除实体" onclick=javascrtpt:kill()>    
+        <input type="button" class='button' value="设置世界重生点" onclick=javascrtpt:csd()> 
+        <input type="button" class='button' value="关闭聊天栏" onclick=javascrtpt:cc()>    
+        <div class="mczt" style="font-size: 140%;color: #0bbaff">指令</div>
+        <input class='input' id='cmd2' name="cmd2">
+        <input type="button" class='button' value="执行" onclick=javascrtpt:cmd()>
+        <div class="mczt" style="font-size: 140%;color: #0bbaff">消息</div>
+        <input class='input' id='chat2' name="chat2">
+        <input type="button" class='button' value="发送" onclick=javascrtpt:chat()>            
+        <div></div>
+        <input type="button" class='button' value="关于" onclick=javascrtpt:about()>    
+        <h6 color='#37D61E'>By <a class='url' href='https://biyuehu.github.io'>BIYUEHU</a></h6>
+    </div>
+    <script src="./js/web_main.js"></script>
+</body>
+</html>

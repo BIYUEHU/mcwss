@@ -1,23 +1,61 @@
 {
-  "name": "huliws",
-  "version": "1.0.0",
-  "description": "huliws WebSocket By 碧月狐dada",
-  "author": "碧月狐dada",
-  "main": "main.js",
+  "name": "mcwss",
+  "version": "v2.0.0",
+  "description": "Minecraft Bedrock Websocket Server Framework Base For Modern JavaScript",
+  "main": "lib/index.js",
+  "license": "GPL-3.0",
+  "author": "Hotaru <biyuehuya@gmail.com>",
   "scripts": {
-    "huliws": "node main.js"
+    "dev": "ts-node --esm -r tsconfig-paths/register ./src/index.ts --no-signale",
+    "build": "tsc"
   },
-  "homepage": "https://github.com/biyuehu/huliws",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/biyuehu/huliws.git"
-  },
-  "dependencies": {
-    "ws": "6.1.0"
+  "bin": {
+    "mcwss": "./bin.js"
   },
   "keywords": [
+    "minecraft-server",
     "minecraft",
+    "minecraft-mod",
+    "minecraft-plugin",
+    "minecraft-bedrock-edition",
+    "nodejs",
     "websocket",
-    "mcbe"
-  ]
+    "server",
+    "back-end"
+  ],
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "example"
+  ],
+  "bugs": {
+    "url": "https://github.com/biyuehu/mcwss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biyuehu/mcwss.git"
+  },
+  "homepage": "https://github.com/biyuehu/mcwss",
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@types/ws": "^8.5.10",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "execa": "^8.0.1",
+    "inquirer": "^9.2.12",
+    "prettier": "^3.0.2",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "@kotori-bot/logger": "^1.0.0",
+    "@kotori-bot/tools": "^1.1.0",
+    "tsukiko": "^1.2.1",
+    "ws": "^8.16.0"
+  }
 }
