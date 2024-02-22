@@ -154,9 +154,10 @@ const enum CommandTarget {
 
 Supports languages:
 
-```typescript
-
-```
+- English
+- 日本語 (Japanese)
+- 繁體中文 (Traditional Chinese)
+- 简体中文（Simplified Chinese）
 
 ## 🌰 Example
 
