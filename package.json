@@ -7,7 +7,7 @@
   "author": "Hotaru <biyuehuya@gmail.com>",
   "scripts": {
     "dev": "ts-node --esm -r tsconfig-paths/register ./src/index.ts --no-signale",
-    "build": "tsc",
+    "build": "tsc --build",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "bin": {
@@ -26,6 +26,7 @@
   ],
   "files": [
     "lib",
+    "bin.js",
     "LICENSE",
     "README.md",
     "example"
@@ -45,6 +46,7 @@
     "eslint": "^8.47.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-config-typescript": "^3.0.0",
     "execa": "^8.0.1",
     "prettier": "^3.0.2",
     "tsconfig-paths": "^4.2.0"
@@ -53,7 +55,8 @@
     "@kotori-bot/i18n": "^1.2.1",
     "@kotori-bot/logger": "^1.2.0",
     "@kotori-bot/tools": "^1.2.1",
-    "tsukiko": "^1.2.1",
+    "cac": "^6.7.14",
+    "tsukiko": "^1.2.2",
     "ws": "^8.16.0"
   }
 }

@@ -1,6 +1,5 @@
-import { obj } from '@kotori-bot/tools';
 import Tsu from 'tsukiko';
-import { EventDataBase, EventsList } from '../utils/events';
+import { EventsList } from '../utils/events';
 import { BlockObject, ItemObject, EntityObject, Position } from './minecraft';
 import { Client } from '../utils/client';
 import { ALL_EVENTS } from '../const';
@@ -18,7 +17,7 @@ export const eventDataMinecraftBaseSchema = Tsu.Object({
   })
 });
 
-interface EventDataMinecraftBase<T extends keyof EventsList, C extends object> extends EventDataBase<T> {
+interface EventDataMinecraftBase<T extends keyof EventsList, C extends object> {
   body: C;
   header: {
     eventName: T extends 'unknown_minecraft_event'
@@ -242,9 +241,10 @@ interface EventDataPlayerTravelled
     }
   > {}
 
-interface EventDataUnknownMinecraftEvent extends EventDataMinecraftBase<'unknown_minecraft_event', obj> {}
+interface EventDataUnknownMinecraftEvent
+  extends EventDataMinecraftBase<'unknown_minecraft_event', Record<string, any>> {}
 
-interface EventDataCommandResponse extends EventDataBase<'command_response'> {
+interface EventDataCommandResponse {
   body: {
     statusCode: number;
     statusMessage?: string;
@@ -253,7 +253,16 @@ interface EventDataCommandResponse extends EventDataBase<'command_response'> {
     currentPlayerCount?: number;
     maxPlayerCount?: number;
     players?: string;
-    [propName: string]: string | number | boolean | string[] | number[] | obj | obj[] | undefined | null;
+    [propName: string]:
+      | string
+      | number
+      | boolean
+      | string[]
+      | number[]
+      | Record<string, any>
+      | Record<string, any>[]
+      | undefined
+      | null;
   };
   header: {
     messagePurpose: 'commandResponse';
@@ -265,25 +274,25 @@ interface EventDataCommandResponse extends EventDataBase<'command_response'> {
 
 declare module '../utils/events' {
   export interface EventsList {
-    block_broken: EventDataBlockBroken;
-    block_placed: EventDataBlockPlaced;
-    end_of_day: EventDataEndOfDay;
-    entity_spawned: EventDataEntitySpawned;
-    item_acquired: EventDataItemAcquired;
-    item_crafted: EventDataItemCrafted;
-    item_destroyed: EventDataItemDestroyed;
-    item_smelted: EventDataItemSmelted;
-    item_used: EventDataItemUsed;
-    jukebox_used: EventDataJukeboxUsed;
-    mob_interacted: EventDataMobInteracted;
-    mob_killed: EventDataMobKilled;
-    player_bounced: EventDataPlayerBounced;
-    player_died: EventDataPlayerDied;
-    player_message: EventDataPlayerMessage;
-    player_teleported: EventDataPlayerTeleported;
-    player_transform: EventDataPlayerTransform;
-    player_travelled: EventDataPlayerTravelled;
-    unknown_minecraft_event: EventDataUnknownMinecraftEvent;
-    command_response: EventDataCommandResponse;
+    block_broken(data: EventDataBlockBroken): void;
+    block_placed(data: EventDataBlockPlaced): void;
+    end_of_day(data: EventDataEndOfDay): void;
+    entity_spawned(data: EventDataEntitySpawned): void;
+    item_acquired(data: EventDataItemAcquired): void;
+    item_crafted(data: EventDataItemCrafted): void;
+    item_destroyed(data: EventDataItemDestroyed): void;
+    item_smelted(data: EventDataItemSmelted): void;
+    item_used(data: EventDataItemUsed): void;
+    jukebox_used(data: EventDataJukeboxUsed): void;
+    mob_interacted(data: EventDataMobInteracted): void;
+    mob_killed(data: EventDataMobKilled): void;
+    player_bounced(data: EventDataPlayerBounced): void;
+    player_died(data: EventDataPlayerDied): void;
+    player_message(data: EventDataPlayerMessage): void;
+    player_teleported(data: EventDataPlayerTeleported): void;
+    player_transform(data: EventDataPlayerTransform): void;
+    player_travelled(data: EventDataPlayerTravelled): void;
+    unknown_minecraft_event(data: EventDataUnknownMinecraftEvent): void;
+    command_response(data: EventDataCommandResponse): void;
   }
 }

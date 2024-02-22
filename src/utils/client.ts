@@ -54,28 +54,28 @@ type SendPacket = SendPacketSubscribe | SendPacketCommand;
 export class Client {
   private ws: WebSocket;
 
-  req: IncomingMessage;
+  public req: IncomingMessage;
 
-  sessionId: number;
+  public sessionId: number;
 
-  sessionDate: Date;
+  public sessionDate: Date;
 
-  constructor(ws: WebSocket, req: IncomingMessage, id: number) {
+  public constructor(ws: WebSocket, req: IncomingMessage, id: number) {
     this.ws = ws;
     this.req = req;
     this.sessionId = id;
     this.sessionDate = new Date();
   }
 
-  send(data: SendPacket) {
+  public send(data: SendPacket) {
     this.ws.send(JSON.stringify(data));
   }
 
-  close() {
+  public close() {
     this.ws.close();
   }
 
-  subscribe(event: MinecraftEvents) {
+  public subscribe(event: MinecraftEvents) {
     this.send({
       body: {
         eventName: event
@@ -89,7 +89,7 @@ export class Client {
     });
   }
 
-  unsubscribe(event: MinecraftEvents) {
+  public unsubscribe(event: MinecraftEvents) {
     this.send({
       body: {
         eventName: event
@@ -103,7 +103,7 @@ export class Client {
     });
   }
 
-  run(cmd: string | string[]) {
+  public run(cmd: string | string[]) {
     const command = typeof cmd === 'string' ? cmd : cmd.join(' ');
     this.send({
       body: {
@@ -122,11 +122,11 @@ export class Client {
     });
   }
 
-  chat(message: string) {
+  public chat(message: string) {
     this.run(['say', message]);
   }
 
-  chatf(message: string, color?: TextColor, sender?: string, target: CommandTarget = CommandTarget.SELF) {
+  public chatf(message: string, color?: TextColor, sender?: string, target: CommandTarget = CommandTarget.SELF) {
     let text = color ? `${color}${message}` : message;
     text = sender ? `<${sender}>${text}` : text;
     this.run([
@@ -138,7 +138,7 @@ export class Client {
     ]);
   }
 
-  func(file: string) {
+  public func(file: string) {
     if (!existsSync(file)) return false;
     readFileSync(file)
       .toString()

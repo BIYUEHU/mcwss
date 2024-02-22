@@ -10,10 +10,9 @@
     "incremental": true,
     "baseUrl": ".",
     "rootDir": "./src",
-    "outDir": "./dist",
+    "outDir": "./lib",
   },
-  "exclude": [
-    "./template",
-    "./dist"
+  "include": [
+    "./src"
   ]
 }
