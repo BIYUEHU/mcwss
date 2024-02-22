@@ -1,6 +1,6 @@
 {
   "name": "mcwss",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Minecraft Bedrock Websocket Server Framework Base For Modern JavaScript",
   "main": "lib/index.js",
   "license": "GPL-3.0",
@@ -28,6 +28,7 @@
     "lib",
     "bin.js",
     "LICENSE",
+    "locales",
     "README.md",
     "example"
   ],
