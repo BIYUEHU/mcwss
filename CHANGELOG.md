@@ -1,3 +1,12 @@
+## [2.1.1](https://github.com/biyuehu/mcwss/compare/v2.1.0...v2.1.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* forget locales includes to package ([84e3a16](https://github.com/biyuehu/mcwss/commit/84e3a164e8af4cfa9e769cfd90acdbd8ec023bf1))
+
+
+
 # [2.1.0](https://github.com/biyuehu/mcwss/compare/v2.0.0...v2.1.0) (2024-02-22)
 
 
