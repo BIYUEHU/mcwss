@@ -1,0 +1,14 @@
+# [2.0.0](https://github.com/biyuehu/mcwss/compare/1.0.0...2.0.0) (2024-02-22)
+
+
+### Features
+
+* mcwss base on typescript ([64a7116](https://github.com/biyuehu/mcwss/commit/64a711692d96fcee246212e2a4e1fc89ca12fbbf))
+* mcwss base on typescript ([68d617a](https://github.com/biyuehu/mcwss/commit/68d617a677ec08d2f16d7e22a1aa4a79712c3e0f))
+
+
+
+# 1.0.0 (2022-07-23)
+
+
+

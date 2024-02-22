@@ -1,19 +1,19 @@
 {
   "root": true,
+  "env": {
+    "es2024": true
+  },
   "extends": [
     "airbnb-base",
-    "prettier"
+    "prettier",
+    "typescript"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint"
   ],
   "rules": {
-    // "@typescript-eslint/no-explicit-any": 0,
-    // "@typescript-eslint/no-namespace": 0,
-    // "no-console": 0,
-    // "space-before-function-paren": 0,
-    /* typescript need */
+    "import/no-extraneous-dependencies": 0,
     "import/no-unresolved": 0,
     "import/extensions": 0,
     "no-use-before-define": 0,
@@ -22,6 +22,7 @@
     "no-redeclare": 0
   },
   "ignorePatterns": [
-    "*.js"
+    "*.js",
+    "*.d.ts"
   ]
 }

@@ -3,7 +3,21 @@ dist
 lib
 .husky/_
 
+.vscode/*
+.vs/*
+!.vscode/extensions.json
+
 *.tgz
 tsconfig.tsbuildinfo
-pnpm-lock.yaml
-old
+*.log
+
+kotori.dev.yml
+
+# modules/*
+!modules/adapter-*
+!modules/core
+!modules/helper
+!modules/i18n-command
+!modules/menu
+
+data

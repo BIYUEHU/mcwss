@@ -8,10 +8,12 @@
     "experimentalDecorators": true,
     "composite": true,
     "incremental": true,
-    "outDir": "lib",
-    "baseUrl": "./src",
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "outDir": "./dist",
   },
-  "include": [
-    "src/**/*.ts"
-  ],
+  "exclude": [
+    "./template",
+    "./dist"
+  ]
 }
