@@ -53,21 +53,21 @@ mcwss --port 2333 --mode debug --lang ja_JP
 
 - `*/help` Show Mcwss command help
 - `*/connect` Show WebSocket connection time
-- `*/about` Show about information§r
-- `*/clears` Clear chat content§r
-- `*/func <path>` Execute mcfunction on server§r
-- `*/helph` Show hidden command help§r",
+- `*/about` Show about informatio
+- `*/clears` Clear chat content
+- `*/func <path>` Execute mcfunction on server
+- `*/helph` Show hidden command help,
 
 Game hidden Command:
 
-- `./closewebsocket` Close websocket connection§r
-- `./gettopsolidblock <x> <y> <z>` Get top solid block coordinates§r
-- `./querytarget <selector>` Get precise float coordinates of entity§r
-- `./agent` Mascot§r
-- `./enableencryption` Unknown§r
-- `./closechat` Close chat§r
-- `./geteduclientinfo` Get version info§r
-- `./getlocalplayername` Return player name§r
+- `./closewebsocket` Close websocket connection
+- `./gettopsolidblock <x> <y> <z>` Get top solid block coordinates
+- `./querytarget <selector>` Get precise float coordinates of entity
+- `./agent` Mascot
+- `./enableencryption` Unknown
+- `./closechat` Close chat
+- `./geteduclientinfo` Get version info
+- `./getlocalplayername` Return player name
 
 ## 🎯 Events
 
