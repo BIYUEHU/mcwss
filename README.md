@@ -2,7 +2,7 @@
 
 > The project is refactory version for version of three years (2021) ago base on TypeScript.
 
-A simple Minecraft Bedrock Edition websocket server framework, help developer to setup websocket server faster for Minecraft or your self package depend on it.Its core `Mcwss` base a events emiter and provide many of events which can be listened.In addition,it provides `Client` instance object to interact with every clent.
+A simple Minecraft Bedrock Edition websocket server framework, help developer to setup websocket server faster for Minecraft or your self package depend on it.Its core `Mcwss` base a events emiter and provide many of events which can be listened.In addition,it provides `Client` instance object to interact with every client.
 
 ## 🧊 Usage
 
