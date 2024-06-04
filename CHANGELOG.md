@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/biyuehu/mcwss/compare/v2.1.1...v2.1.2) (2024-06-04)
+
+
+### Bug Fixes
+
+* update packages with fluoro ([98eb871](https://github.com/biyuehu/mcwss/commit/98eb871b65894d624e7bf5487aaefa968e2f2834))
+
+
+
 ## [2.1.1](https://github.com/biyuehu/mcwss/compare/v2.1.0...v2.1.1) (2024-02-22)
 
 
