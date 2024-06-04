@@ -1,8 +1,8 @@
-import { getUuid } from '@kotori-bot/tools';
 import { existsSync, readFileSync } from 'fs';
 import { IncomingMessage } from 'http';
 import WebSocket from 'ws';
 import { MinecraftEvents } from '../types/events';
+import { randomUUID } from 'crypto';
 
 export const enum TextColor {
   GREEN = '§a',
@@ -81,7 +81,7 @@ export class Client {
         eventName: event
       },
       header: {
-        requestId: getUuid(),
+        requestId: randomUUID(),
         messagePurpose: 'subscribe',
         version: 1,
         messageType: 'commandRequest'
@@ -95,7 +95,7 @@ export class Client {
         eventName: event
       },
       header: {
-        requestId: getUuid(),
+        requestId: randomUUID(),
         messagePurpose: 'unsubscribe',
         version: 1,
         messageType: 'commandRequest'
@@ -114,7 +114,7 @@ export class Client {
         version: 1
       },
       header: {
-        requestId: getUuid(),
+        requestId: randomUUID(),
         messagePurpose: 'commandRequest',
         version: 1,
         messageType: 'commandRequest'

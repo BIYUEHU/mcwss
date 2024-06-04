@@ -1,6 +1,6 @@
 {
   "name": "mcwss",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Minecraft Bedrock Websocket Server Framework Base For Modern JavaScript",
   "main": "lib/index.js",
   "license": "GPL-3.0",
@@ -41,23 +41,24 @@
   },
   "homepage": "https://github.com/biyuehu/mcwss",
   "devDependencies": {
-    "@types/node": "^20.8.7",
+    "@types/node": "^20.14.1",
     "@types/ws": "^8.5.10",
     "conventional-changelog-cli": "^4.1.0",
-    "eslint": "^8.47.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-config-typescript": "^3.0.0",
     "execa": "^8.0.1",
-    "prettier": "^3.0.2",
+    "prettier": "^3.3.0",
     "tsconfig-paths": "^4.2.0"
   },
   "dependencies": {
-    "@kotori-bot/i18n": "^1.2.1",
-    "@kotori-bot/logger": "^1.2.0",
-    "@kotori-bot/tools": "^1.2.1",
+    "@kotori-bot/i18n": "^1.3.0",
+    "@kotori-bot/logger": "^1.2.1",
+    "@kotori-bot/tools": "^1.3.1",
     "cac": "^6.7.14",
+    "fluoro": "^1.0.2",
     "tsukiko": "^1.2.2",
-    "ws": "^8.16.0"
+    "ws": "^8.17.0"
   }
 }

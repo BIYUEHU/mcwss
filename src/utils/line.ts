@@ -38,7 +38,7 @@ export default function (port: number, level: LoggerLevel, lang: LocaleType) {
   }
 
   /* server events register */
-  mcwss.on('ready', () => logger.info(`WebSocketServer started at ws://localehost:${port} `));
+  mcwss.on('ready', () => logger.info(`WebSocketServer started at ws://localhost:${port} `));
 
   mcwss.on('dispose', () => logger.info('WebSocketServer stopped'));
 

@@ -1,5 +1,5 @@
 import WebSocket from 'ws';
-import { Events } from '@kotori-bot/tools';
+import { Events } from 'fluoro';
 import { TsuError } from 'tsukiko';
 import { EventsList } from './utils/events';
 import { MinecraftEvents, eventDataMinecraftBaseSchema } from './types/events';
