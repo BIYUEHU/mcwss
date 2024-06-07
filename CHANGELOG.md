@@ -1,3 +1,12 @@
+## [2.1.3](https://github.com/biyuehu/mcwss/compare/v2.1.2...v2.1.3) (2024-06-07)
+
+
+### Features
+
+* create mcwss from ws server instance ([90f1831](https://github.com/biyuehu/mcwss/commit/90f183158d55400eb17ae414c40df012984c979a))
+
+
+
 ## [2.1.2](https://github.com/biyuehu/mcwss/compare/v2.1.1...v2.1.2) (2024-06-04)
 
 
