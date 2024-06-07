@@ -1,12 +1,12 @@
 {
   "name": "mcwss",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Minecraft Bedrock Websocket Server Framework Base For Modern JavaScript",
   "main": "lib/index.js",
   "license": "GPL-3.0",
   "author": "Hotaru <biyuehuya@gmail.com>",
   "scripts": {
-    "dev": "ts-node --esm -r tsconfig-paths/register ./src/index.ts --no-signale",
+    "dev": "tsx src/utils/program",
     "build": "tsc",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
@@ -41,24 +41,23 @@
   },
   "homepage": "https://github.com/biyuehu/mcwss",
   "devDependencies": {
-    "@types/node": "^20.14.1",
+    "@types/node": "^20.14.2",
     "@types/ws": "^8.5.10",
     "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-typescript": "^3.0.0",
-    "execa": "^8.0.1",
-    "prettier": "^3.3.0",
-    "tsconfig-paths": "^4.2.0"
+    "prettier": "^3.3.1",
+    "tsx": "^4.13.2"
   },
   "dependencies": {
-    "@kotori-bot/i18n": "^1.3.0",
-    "@kotori-bot/logger": "^1.2.1",
-    "@kotori-bot/tools": "^1.3.1",
+    "@kotori-bot/i18n": "^1.3.1",
+    "@kotori-bot/logger": "^1.3.1",
+    "@kotori-bot/tools": "^1.4.1",
     "cac": "^6.7.14",
     "fluoro": "^1.0.2",
-    "tsukiko": "^1.2.2",
+    "tsukiko": "^1.2.6",
     "ws": "^8.17.0"
   }
 }

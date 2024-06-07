@@ -10,7 +10,7 @@ const LOG_DIR = resolve(__dirname, '../../logs');
 
 export default function (port: number, level: LoggerLevel, lang: LocaleType) {
   /* instances */
-  const mcwss = new Mcwss({ port });
+  const mcwss = new Mcwss({ server: port });
 
   if (!existsSync(LOG_DIR)) mkdirSync(LOG_DIR);
 

@@ -7,10 +7,10 @@ import { Client } from './utils/client';
 import { ALL_EVENTS } from './const';
 
 interface McwssConfig {
-  port: number;
   events?: Set<MinecraftEvents>;
   autoRegister?: boolean;
   autoClearEvents?: boolean;
+  server: WebSocket.Server | number;
 }
 
 type EventsMappingType<T> = {
@@ -83,7 +83,8 @@ export class Mcwss extends Events<EventsList> {
   }
 
   public start() {
-    this.server = new WebSocket.Server({ port: this.config.port });
+    this.server =
+      typeof this.config.server === 'number' ? new WebSocket.Server({ port: this.config.server }) : this.config.server;
     this.server?.on('error', (error) => this.emit('error', { error }));
     this.server?.on('connection', (ws, req) => {
       const id = Object.keys(this.clients).length + 1;

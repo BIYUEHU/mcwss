@@ -1,3 +1,3 @@
 # Todo-list
 
-- [ ] Program print i18n
+- [x] Program print i18n
